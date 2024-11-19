@@ -8,7 +8,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task0.V27.Test
         [TestMethod]
         public void TestMethod()
         {
-            string path = @"C:\Users\kiril\source\repos\Tyuiu.PredygerKK.Sprint5\Tyuiu.PredygerKK.Sprint5.Task0.V27\bin\Debug\net8.0\OutPutFileTask0.txt";
+            string path = Path.GetTempFileName();
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileexists = fileInfo.Exists;
