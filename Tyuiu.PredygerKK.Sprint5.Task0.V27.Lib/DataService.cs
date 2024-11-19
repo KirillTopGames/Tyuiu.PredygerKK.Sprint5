@@ -6,7 +6,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task0.V27.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask0.txt";
+            string path = Path.GetTempFileName();
 
             double res = Math.Round(Math.Pow(x - 1,3*x + 1), 3);
 
