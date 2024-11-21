@@ -25,7 +25,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task1.V17.Lib
                     y = 2*x - 4 + ((2*x-1)/(Math.Sin(x) + 1));
                     res[cnt] = y;
                 }
-                File.WriteAllText(path, Convert.ToString(Math.Round(res[cnt], 2)) + "\n");
+                File.AppendAllText(path, Convert.ToString(Math.Round(res[cnt], 2)) + "\n");
                 cnt++;
             }
             return path;
