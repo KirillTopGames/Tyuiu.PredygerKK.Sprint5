@@ -21,7 +21,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task1.V17
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дана функция.                                                           *");
             Console.WriteLine("* Произвести табулирование. f(x) на заданном диапазоне [-5; 5] с шагом 1. *");
-            Console.WriteLine("* Произвести проверку деления на ноль.                                    *");
+            Console.WriteLine("* Произвести проверку деления нa ноль.                                    *");
             Console.WriteLine("* При делении на ноль вернуть значение 0.                                 *");
             Console.WriteLine("* Результат сохранить в текстовый файл OutPutFileTask1.txt и вывести      *");
             Console.WriteLine("* на консоль в таблицу.                                                   *");
