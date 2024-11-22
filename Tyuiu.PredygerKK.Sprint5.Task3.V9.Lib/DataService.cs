@@ -7,7 +7,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task3.V9.Lib
     {
         public string SaveToFileTextData(int x)
         {
-            string path = $@"C:\Users\kiril\source\repos\Tyuiu.PredygerKK.Sprint5\Tyuiu.PredygerKK.Sprint5.Task3.V9\bin\Debug\net8.0\OutPutFileTask3.bin";
+            string path = Path.GetTempFileName();
 
             string file = "OutPutFileTask3.bin";
 
