@@ -1,4 +1,6 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Globalization;
+
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.PredygerKK.Sprint5.Task4.V1.Lib
 {
@@ -17,7 +19,8 @@ namespace Tyuiu.PredygerKK.Sprint5.Task4.V1.Lib
             {
                 res = (double)1 / (Math.Cos(x) + x) - 4.12 * x;
             }
-            return res;
+            string res1 = Convert.ToString(res);
+            return double.Parse(res1, CultureInfo.InvariantCulture);
         }
     }
 }
