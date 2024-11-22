@@ -17,7 +17,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task3.V9.Lib
             {
                 writer.Write(BitConverter.GetBytes(res));
             }
-            return path;
+            return Path.Combine(path, file);
         }
     }
 }
