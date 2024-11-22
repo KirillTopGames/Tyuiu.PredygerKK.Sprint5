@@ -15,7 +15,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task4.V1.Lib
             }
             else
             {
-                res = (double)1 / (Math.Cos(x) + x) - 4.12 * x;
+                res = Math.Round((double)1 / (Math.Cos(x) + x) - 4.12 * x, 2);
             }
             string res1 = Convert.ToString(res);
             return double.Parse(res1, System.Globalization.CultureInfo.InvariantCulture);
