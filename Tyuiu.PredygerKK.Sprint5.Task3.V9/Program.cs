@@ -8,6 +8,8 @@ namespace Tyuiu.PredygerKK.Sprint5.Task3.V9
         {
             DataService ds = new DataService();
 
+            string path = $@"{Directory.GetCurrentDirectory()}\OutPutFileTask3.bin";
+
             Console.Title = "Спринт #5 | Выполнил: Предыгер К.К. | ПКТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
