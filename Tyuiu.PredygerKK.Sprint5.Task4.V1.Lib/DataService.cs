@@ -15,7 +15,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task4.V1.Lib
             }
             else
             {
-                res = 1 / (Math.Cos(x) + x) - 4.12 * x;
+                res = (double)1 / (Math.Cos(x) + x) - 4.12 * x;
             }
             return res;
         }
