@@ -4,20 +4,16 @@
     {
         static void Main(string[] args)
         {
-            double start = -5, end = -3, step = 1;
-            string outputfile = "OutPutFileTask1.txt";
-            for (double x = start; x <= end; x += step)
-            {
-                double result = 2 * x + 3 * Math.Pow(x, 2) + 4;
-                if(double.IsInfinity(result) || double.IsNaN(result))
-                {
-                    result = 0;
-                }
-                result = Math.Round(result, 2);
-                File.AppendAllText(outputfile, $"{result} ");
-                Console.WriteLine($"{result}");
-            }
-            File.AppendAllText(outputfile, "\n");
+            //x1 = 29
+            //x2 = 7
+            //x3 = 5
+            //x4 = 6
+            //x5 = 3
+            //x6 = 377
+            //x7 = 4
+            //x8 = -2
+            //x9 = -2
+            //x10 = 245
         }
     }
 }
