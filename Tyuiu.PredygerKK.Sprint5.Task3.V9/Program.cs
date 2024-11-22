@@ -39,6 +39,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task3.V9
             string res = ds.SaveToFileTextData(x);
 
             Console.WriteLine(x*x*x/(x*x-1));
+
             Console.WriteLine("Файл: " + res);
             Console.WriteLine("Успешно создан!");
         }
