@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Text;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.PredygerKK.Sprint5.Task3.V9.Lib
 {
@@ -9,10 +10,11 @@ namespace Tyuiu.PredygerKK.Sprint5.Task3.V9.Lib
             string path = Path.GetTempFileName();
             string file = "OutPutFileTask3.bin";
 
-            int res = x*x*x/(x*x-1);
-            using (BinaryWriter writer = new BinaryWriter(File.Open(file, FileMode.Append)))
+            double res = (x*x*x/(x*x-1));
+            res = Math.Round(res, 3);
+            using (BinaryWriter writer = new BinaryWriter(File.Open(file, FileMode.OpenOrCreate), Encoding.UTF8))
             {
-                writer.Write(res);
+                writer.Write(BitConverter.GetBytes(res));
             }
             return path;
         }
