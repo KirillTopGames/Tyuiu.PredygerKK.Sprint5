@@ -9,24 +9,21 @@ namespace Tyuiu.PredygerKK.Sprint5.Task2.V16
         {
             DataService ds = new DataService();
 
-            int[,] matrix = { { }, { }, { } };
+            int[,] matrix = { {2, -4, -8 }, {3,-7,-2 }, {3, 8, 6 } };
 
             Console.Title = "Спринт #5 | Выполнил: Предыгер К.К. | ПКТб-24-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            //Console.WriteLine("* Тема: Класс File. Запись набора данных в текстовый файл                 *");
+            Console.WriteLine("* Тема: Класс File. Запись структурированных данных в текстовый файл      *");
             Console.WriteLine("* Задание #2                                                              *");
             Console.WriteLine("* Вариант #16                                                             *");
             Console.WriteLine("* Выполнил: Предыгер Кирилл Константинович | ПКТб-24-1                    *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дана функция.                                                           *");
-            Console.WriteLine("* Произвести табулирование. f(x) на заданном диапазоне [-5; 5] с шагом 1. *");
-            Console.WriteLine("* Произвести проверку деления нa ноль.                                    *");
-            Console.WriteLine("* При делении на ноль вернуть значение 0.                                 *");
-            Console.WriteLine("* Результат сохранить в текстовый файл OutPutFileTask1.txt и вывести      *");
-            Console.WriteLine("* на консоль в таблицу.                                                   *");
-            Console.WriteLine("* Значения округлить до двух знаков после запятой.                        *");
+            Console.WriteLine("* Дан двумерный целочисленный массив 3 на 3 элементов, заполненный        *");
+            Console.WriteLine("* значениями с клавиатуры. Заменить положительные элементы массива на 1,  *");
+            Console.WriteLine("* отрицательные на 0. Результат сохранить в файл OutPutFileTask2.csv и    *");
+            Console.WriteLine("* вывести на консоль.                                                     *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
