@@ -19,7 +19,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task5.V21
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Найти факториал наибольшего целого числа, которое делится на 2,         *");
             Console.WriteLine("* в файле. Полученный результат вывести на консоль. У вещественных        *");
-            Console.WriteLine("* значений округлить до трёх знаков после запятой.                        *");
+            Console.WriteLine("* значений округлить до трёх знаков после зaпятой.                        *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
