@@ -8,16 +8,17 @@ namespace Tyuiu.PredygerKK.Sprint5.Task4.V1.Lib
         {
             double res;
             string data = File.ReadAllText(path);
-            double x = Convert.ToDouble(data);
+            double x = double.Parse(data, System.Globalization.CultureInfo.InvariantCulture); ;
             if (Math.Cos(x) == -x)
             {
                 res = 0;
             }
             else
             {
-                res = 1 / (Math.Cos(x) + x) - 4.12 * x;
+                res = Math.Round((double)1 / (Math.Cos(x) + x) - 4.12 * x, 2);
             }
-            return res;
+            string res1 = Convert.ToString(res);
+            return double.Parse(res1, System.Globalization.CultureInfo.InvariantCulture) / 100;
         }
     }
 }

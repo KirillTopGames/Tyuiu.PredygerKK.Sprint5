@@ -11,13 +11,13 @@ namespace Tyuiu.PredygerKK.Sprint5.Task3.V9.Lib
 
             string file = "OutPutFileTask3.bin";
 
-            double res = (x*x*x/(x*x-1));
+            double res = ((double)x*x*x/(x*x-1));
             res = Math.Round(res, 3);
-            using (BinaryWriter writer = new BinaryWriter(File.Open(file, FileMode.OpenOrCreate), Encoding.UTF8))
+            using (BinaryWriter writer = new BinaryWriter(File.Open(Path.Combine(path, file), FileMode.OpenOrCreate), Encoding.UTF8))
             {
                 writer.Write(BitConverter.GetBytes(res));
             }
-            return path;
+            return Path.Combine(path, file);
         }
     }
 }
