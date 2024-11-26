@@ -7,7 +7,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task7.V25.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string path1 = $@"{Directory.GetCurrentDirectory()}\OutPutDataFileTask7V25.txt";
+            string path1 = $@"{Path.GetTempPath()}\OutPutDataFileTask7V25.txt";
             string s = File.ReadAllText(path);
             string alph = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
             foreach(char c in alph)
