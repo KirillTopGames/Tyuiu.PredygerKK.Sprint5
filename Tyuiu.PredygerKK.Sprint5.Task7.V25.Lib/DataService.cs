@@ -14,7 +14,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task7.V25.Lib
             {
                 s = s.Replace($"{c}", "");
             }
-            s = s.Replace(" .", ".");
+            s = s.Replace("    .", ".");
             File.WriteAllText(path1, Convert.ToString(s));
             return s;
         }
