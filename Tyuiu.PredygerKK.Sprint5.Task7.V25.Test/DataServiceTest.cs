@@ -6,7 +6,7 @@ namespace Tyuiu.PredygerKK.Sprint5.Task7.V25.Test
         [TestMethod]
         public void TestMethod()
         {
-            string path = Path.GetTempFileName();
+            string path = Path.GetTempPath();
             FileInfo fileInfo = new FileInfo(path);
             bool fileexists = fileInfo.Exists;
             bool expect = true;
